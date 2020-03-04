@@ -1,0 +1,23 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiz-ortega/JS-TDD-Course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "Luiz Ortega <luizngust@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luiz-ortega/JS-TDD-Course/issues"
+  },
+  "homepage": "https://github.com/luiz-ortega/JS-TDD-Course#readme"
+}
