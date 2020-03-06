@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "hooks": {
+    "pre-commit": "npm test",
+    "pre-push": "npm run lint",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  },
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*js",
-    "pre-push": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +31,10 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   }
 }

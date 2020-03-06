@@ -1,6 +1,5 @@
 const a = 3;
-
-const c = 'string';
+const b = 2;
 
 function sum() {
   return a + b;
