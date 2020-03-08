@@ -1,8 +1,15 @@
-const a = 3;
-const b = 2;
+describe('Main', () => {
+  describe('Method A', () => {
+    context('Case 1', () => {
+      it('should happen blabla', () => {
+        // espera que aconteça
+        // Entra de dados / métodos sum(2,2)
+        // Espera retornar (4) => true | (3) => false => broken test
+      });
+    });
 
-function sum() {
-  return a + b;
-}
+    context('Case 2', () => {});
+  });
 
-sum();
+  describe('Method B', () => {});
+});
