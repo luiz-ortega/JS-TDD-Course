@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "mocha": true
   },
   "extends": ["airbnb-base"],
   "globals": {
@@ -11,9 +12,6 @@
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
-  },
-  "standard": {
-    "env": ["mocha"]
   },
   "rules": {}
 }
