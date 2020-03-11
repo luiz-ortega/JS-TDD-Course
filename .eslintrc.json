@@ -14,7 +14,9 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-unused-expressions": "off",
-    "comma-dangle": "off"
+    "no-unused-expressions": "off"
+    // "comma-dangle": "off",
+    // "no-confusing-arrow": "off",
+    // "implicit-arrow-linebreak": "off"
   }
 }
