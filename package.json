@@ -5,13 +5,21 @@
   "main": "index.js",
   "hooks": {
     "pre-commit": "npm test",
-    "pre-push": "npm run lint",
+    "pre-push": "npm run lint && npm run test:coverage",
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*js",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -35,7 +43,8 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3",
-    "mocha": "^7.1.0"
+    "mocha": "^7.1.0",
+    "nyc": "^15.0.0"
   },
   "husky": {
     "hooks": {
