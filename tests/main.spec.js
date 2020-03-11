@@ -28,4 +28,8 @@ describe('Main', () => {
   it('should return the number when not multiple', () => {
     expect(FizzBuzz(7)).to.be.equal(7);
   });
+
+  it('should return 0 if number is 0', () => {
+    expect(FizzBuzz(0)).to.be.equal(0);
+  });
 });
